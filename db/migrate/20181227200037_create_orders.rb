@@ -3,8 +3,7 @@ class CreateOrders < ActiveRecord::Migration[5.2]
     create_table :orders do |t|
       t.string :imei, limit: 15
       t.string :modelo
-      t.decimal5 :valor_anual
-      t.decimal2 :valor_anual
+      t.decimal :valor_anual, precision: 5, scale:2
       t.integer :num_parcelas
       t.references :user, foreign_key: true
 
