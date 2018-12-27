@@ -1,2 +1,5 @@
-require 'spec_helper'
-require './app/models/user'
+require 'rails_helper'
+
+RSpec.describe User, type: :model do
+  pending "add some examples to (or delete) #{__FILE__}"
+end
