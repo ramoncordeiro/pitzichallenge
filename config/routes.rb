@@ -1,4 +1,5 @@
 Rails.application.routes.draw do
+
 <<<<<<< HEAD
   get 'order/create'
   get 'order/destroy'
