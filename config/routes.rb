@@ -1,6 +1,6 @@
 Rails.application.routes.draw do
 
-  root 'pages#home'
+  root to:   'pages#home'
   get 'order/create'
   get 'order/destroy'
   get 'order/update'
