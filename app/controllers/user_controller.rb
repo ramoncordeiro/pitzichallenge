@@ -19,13 +19,12 @@ class UserController < ApplicationController
 
   def update
   end
-end
-
 
   private
 
   def allowed_params
     params.require(:user).permit(:name, :cpf, :email)
   end
+
 end
 

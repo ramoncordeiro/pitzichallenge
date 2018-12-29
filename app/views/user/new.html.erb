@@ -1,0 +1,18 @@
+<h1>New User</h1>
+<div>
+<%= form_tag user_new_path do  %>
+  <p> 
+    Name: <%= text_field_tag :name %>
+  </p>
+  <p> 
+    CPF: <%= text_field_tag :cpf %>
+  </p>
+
+  <p> 
+    Email: <%= text_field_tag :Email %>
+  </p>
+  <p>
+    <%= submit_tag 'Sign user' %>
+  </p>
+<% end %>
+</div>
